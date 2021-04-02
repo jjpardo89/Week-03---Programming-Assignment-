@@ -25,7 +25,7 @@ const int CAN_THIRD = 15;
 const int AUS_BASE = 10;
 const int AUS_SECOND = 14;
 const int AUS_THIRD = 17;
-
+//SATURN ADDED AS THE 4TH DESTINATION
 const int SATURN_BASE = 1200;
 const int SATURN_SECOND = 1600;
 const int SATURN_THIRD = 2000;
@@ -95,13 +95,13 @@ int main()
     cin >> order_total;
     file << order_total << endl;
 
-
+    //New destination added - SATURN! User is selecting their desination
     cout << "Please enter destination on earth, or send to SATURN (usa/can/aus/sat)............:";
     file << "Please enter destination on earth, or send to SATURN (usa/can/aus/sat)............:";
     cin >> destination;
     file << destination << endl;
 
-    // Function to calculate the shipping cost based on the input destination. Base shipping is defined as a constant
+    // Function to calculate the shipping cost based on the input destination. Base shipping is defined as a constant. WITH SATURN!
     if (destination == "usa" || destination == "USA")
     {
         if (order_total <= 50) shipping_cost += USA_BASE;
