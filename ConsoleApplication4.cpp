@@ -78,7 +78,7 @@ int main()
     else if (fragile == 'n');
     else {
 
-        //if the user makes an invalid entry by typeing something other than 'y' or 'n'
+        //If the user makes an invalid entry (typing other than y or n)
         cout << "Invalid entry, exiting\nPress any key to continue . . .";
         file << "Invalid entry, exiting\nPress any key to continue . . .";
         getchar();
